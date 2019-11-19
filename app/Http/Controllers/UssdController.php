@@ -9,10 +9,10 @@ class UssdController extends Controller
 
     public function onlineUssdMenu(Request $request)
     {
-        $sessionId   =  $_POST["sessionId"]; //$request->get('sessionId');
-        $serviceCode =  $_POST["serviceCode"]; // $request->get('serviceCode');
-        $phoneNumber =  $_POST["phoneNumber"]; // $request->get('serviceCode');
-        $text        =  $_POST["text"]; // $request->get('serviceCode');
+        $sessionId   =  $request->get('sessionId');
+        $serviceCode =  $request->get('serviceCode');
+        $phoneNumber =  $request->get('serviceCode');
+        $text        =  $request->get('serviceCode');
 
         // use explode to split the string text response from Africa's talking gateway into an array.
 
